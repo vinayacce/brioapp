@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap);
+
+/* Base */
+/* body {
+  padding: 0;
+  margin: 0!important;
+  background-color: #000!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Red Hat Display", sans-serif!important;
+} */
+
+h1 {
+  background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: hsla(0, 0%, 0%, 0.08);
+  animation: zoomout 10s ease 500ms infinite forwards;
+  font-size: 5vw!important;
+}
+
+@keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+  to {
+    background-size: 10%;
+  }
+}
+
+.shineText {
+  // color: hsl(0, 0%, 28%);
+  color: 'white';
+  font-size: 50px!important;
+  font-weight: bold!important;
+  font-family: Fredericka the Great;
+  letter-spacing: 7px!important;
+  cursor: pointer;
+  text-transform: uppercase;
+  // fontFamily: 'Fredericka the Great'
+}
+
+.shineText {
+  // padding: 64px;
+  // background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+  background: linear-gradient(to right, hsl(48, 81%, 45%) 0, hsl(0, 0%, 100%) 10%, hsl(209, 95%, 8%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 800px;
+  }
+}
